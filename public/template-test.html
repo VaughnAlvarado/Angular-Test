@@ -5,7 +5,12 @@
     <title>Bootstrap a Test Module</title>
 </head>
 <body>
+	<ul>
+	    <li ng-repeat="num in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" ng-if="num % 2 == 0">
+	        {{ num }} is even!
+	    </li>
+	</ul>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script type="text/javascript" src="/js/templateTest.js"></script>
+    <script type="text/javascript" src="/js/template-test.js"></script>
 </body>
 </html>
