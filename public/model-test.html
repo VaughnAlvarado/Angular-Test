@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="modelTest">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap a Test Module</title>
+    <style>
+     li:first-child {
+     	font-style: italic;
+	 }
+	 li:last-child {
+	     font-weight: bold;
+	 }
+	 </style>
+</head>
+<body>
+	<form novalidate>
+	    <label for="first_name">First Name</label>
+	    <input type="text" id="first_name" ng-model="user.firstName" maxlength="50" required>
+
+	    <label for="last_name">Last Name</label>
+	    <input type="text" id="last_name"  ng-model="user.lastName" maxlength="100" required>
+
+	    <label for="email">eMail</label>
+	    <input type="email" id="email" ng-model="user.email" required>
+
+	    <label for="email">Github</label>
+	    <input type="url" id="url" ng-model="user.url">
+
+	    <label for="image">Images</label>
+	    <input type="image" id="image" ng-model="user.image" required>
+	</form>
+	<div>
+	    Welcome {{ user.firstName }} {{ user.lastName }}<br>
+	    We will send a confirmation eMail to {{ user.email }} and check out {{ user.url }}
+	</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="/js/model-test.js"></script>
+</body>
+</html>
