@@ -18,16 +18,16 @@
 	    <input type="text" id="first_name" ng-model="user.firstName" maxlength="50" required>
 
 	    <label for="last_name">Last Name</label>
-	    <input type="text" id="last_name"  ng-model="user.lastName" maxlength="100" required>
+	    <input type="text" id="last_name"  ng-model="user.lastName" maxlength="100" ng-touched required>
 
 	    <label for="email">eMail</label>
-	    <input type="email" id="email" ng-model="user.email" required>
+	    <input type="email" id="email" ng-model="user.email" ng-touched required>
 
 	    <label for="email">Github</label>
-	    <input type="url" id="url" ng-model="user.url">
+	    <input type="url" id="url" ng-model="user.url" ng-touched>
 
 	    <label for="image">Images</label>
-	    <input type="image" id="image" ng-model="user.image" required>
+	    <input type="image" id="image" ng-model="user.image" ng-touched required>
 	</form>
 	<div>
 	    Welcome {{ user.firstName }} {{ user.lastName }}<br>
